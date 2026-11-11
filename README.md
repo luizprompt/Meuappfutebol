@@ -1,50 +1,38 @@
-# Welcome to your Expo app 👋
+Projeto acadêmico desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas (FATEC Zona Sul).
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+O **Meuappfutebol** é uma aplicação mobile construída em **React Native (Expo)** cujo objetivo central foi **desenvolver uma interface intuitiva com sistema de banco de dados**, solucionando o agendamento de partidas e a reserva de horários em quadras esportivas com foco em usabilidade e persistência em nuvem.
 
-1. Install dependencies
+---
 
+## 🎯 Objetivo e Escopo de Desenvolvimento
+
+O projeto foi concebido para unir uma experiência de usuário (UI/UX) fluida no ecossistema mobile à robustez de uma camada de dados moderna na nuvem, dividindo-se em duas frentes fundamentais:
+
+### 1. Front-End & Interface Intuitiva (React Native)
+* **Fluxo de Acesso Amigável:** Telas de Login e Cadastro com validação de entradas, tratamento de estados e mensagens claras de feedback visual.
+* **Busca e Descoberta:** Listagem com filtros por localização, tipo de piso (society, salão, campo) e visualização de horários vagos em tempo real.
+* **Componentização Modular:** Cards dinâmicos para exibição de detalhes dos centros esportivos (fotos, comodidades, valores e status de ocupação).
+
+### 2. Sistema de Banco de Dados & Autenticação (Supabase / Nuvem)
+* **Arquitetura de Dados:** Modelagem e estruturação relacional das entidades de usuários, quadras e reservas com PostgreSQL em nuvem.
+* **Autenticação Segura:** Fluxo de autenticação e controle de sessão gerenciado via serviço de Auth.
+* **Segurança e Variáveis de Ambiente:** Isolamento de credenciais de conexão e chaves públicas através de arquivos de configuração (`.env`).
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Mobile:** React Native, Expo, JavaScript
+* **Navegação & UI:** React Navigation, StyleSheet API, React Hooks (`useState`, `useEffect`)
+* **Banco de Dados & BaaS:** Supabase (PostgreSQL em Nuvem, Auth API)
+* **Segurança:** Dotenv para isolamento de variáveis confidenciais
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
+1. **Clone o repositório:**
    ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   git clone [https://github.com/luizprompt/meuappfutebol.git](https://github.com/luizprompt/meuappfutebol.git)
+   cd meuappfutebol
